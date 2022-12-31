@@ -34,7 +34,7 @@ print(result)
 x=4/5
 y=4//5
 print(x,y)
-a=2.85//4
+a=2.85//4 #soooo // isn't int division it's floor division apparently
 print(a)
 
 #modulo is weird, put in place of the division sign entirely %

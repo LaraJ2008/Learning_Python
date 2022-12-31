@@ -1,0 +1,58 @@
+print('can you hear me')
+#strings are combined with +
+first='lara'
+last='janiszewski'
+full=first+" "+last
+print(full.title())
+
+#if you make a list and then want values for indices, you can give position [-1] to get the last of a list, [-2] gives next to last
+list = [1,2,3,4,5]
+print(list[-1])
+#can start with an empty list =[] and then append as you get data. Can say del to erase list components or pop the last item out, 
+# which saves the item. use remove("element name") to get rid of an element you don't know the position of
+list.append(12)
+print(list)
+popped_number=list.pop()
+print(popped_number)
+print(list)
+#IF statements are weird without else, if true, all options happen in order.  INDENTATION
+a=30
+if a>50:
+    print("option 1")
+print("option 2")
+
+a=30
+if a>10:
+    print("option 1")
+print("option 2")
+#if-else needs a == operator, which is a question mark. i%5 = 0? Can't use = despite the if syntax implying a ?
+i=20
+if i%5==0:
+    print("multiple of 5")
+else:
+    print("not a multiple of 5")    
+
+#TEST: this fails, must have changed for phython3? book says it will work
+#numbers = list(range(1,6))
+#nested IFs. 
+SET=[*range(0,101,1)]
+print(SET[25])    
+print(type(SET))
+print(SET[-1])
+print(SET[1])
+
+
+for i in range(0,101):
+    if i>9:
+        if i%2==0:
+            SET.remove(i)
+        elif i%3==0:
+            SET.remove(i)
+        elif i%5==0:
+            SET.remove(i)
+        elif i%7==0:
+            SET.remove(i)    
+    elif i in [0,1,4,6,8,9]:
+        SET.remove(i)        
+
+print(SET)
