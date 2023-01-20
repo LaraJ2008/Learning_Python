@@ -1,0 +1,36 @@
+import math
+a=20
+Problem=[*range(2,a+1,1)]
+#print(a)
+R=[*range(2,round(math.sqrt(a))+1)]
+
+for i in range(2,a+1):
+    for j in R:
+        if j<i:
+            if i%j==0:
+                while i in Problem:
+                    Problem.remove(i)
+                #print(i)
+
+print(Problem)
+
+a=10
+Problem=[*range(2,a+1,1)]
+#print(a)
+R=[*range(2,round(math.sqrt(a))+1)]
+
+for i in range(2,a+1):
+    for j in R:
+        if j<i:
+            if i%j==0:
+                Problem.remove(i)
+                break
+            
+
+print(Problem)
+
+#continue says 'if the above condition is true 
+# skip it and move on'
+#break says stop checking the above condition
+
+
