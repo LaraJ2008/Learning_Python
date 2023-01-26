@@ -14,7 +14,7 @@ for i in range(2,a+1):
 
 print(Problem)
 
-a=10
+a=1000
 Problem=[*range(2,a+1,1)]
 #print(a)
 R=[*range(2,round(math.sqrt(a))+1)]
