@@ -32,8 +32,8 @@ else:
     print("\nYeah " + str(number) + " is odd ")    
 
 
-# make = input("What car make are you interested in? ")
-# print ("\nWe don't have " + make + "s, try again")
+make = input("What car make are you interested in? ")
+print ("\nWe don't have " + make + "s, try again")
 
 #Ok I wrote this if else to see what would happen if two of the conditions technically overlapped, and it does fine, order presumably matters
 
@@ -131,3 +131,5 @@ while run:
     elif topping == 'done':
         print(Toppings)
         run = False
+
+
