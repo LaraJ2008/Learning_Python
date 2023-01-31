@@ -3,7 +3,8 @@
 #While current number is less than top number add current number to Sum, then increment
 #produce incremented number then add it to Partial_sum, assign Partial_sum to Full_sum?
 #really this is just increment, add, increment, add...
-Base_number = 0
+#oops first one hard codes initial addend to 1 
+
 Top_number = 100
 Current_addend = 1
 
@@ -19,4 +20,32 @@ while Current_addend <= Top_number:
 print(Partial_sum)
         
 
+Top_number = 100
+Current_addend = 10
+Partial_sum = 0
 
+while Current_addend <= Top_number:
+    Partial_sum = Current_addend + Partial_sum           
+    Current_addend += 1
+print(Partial_sum)
+        
+
+#Write a python program that takes a word as input, and counts the vowels in that word. Building block here
+# This program shows how to extract letters from a given string.
+
+# my_string = "hello"
+
+# print("your string contains the following letters: ")
+
+# for letter in my_string:
+#   print(letter + " ")
+
+Vowels = 0
+Letters  = 0
+my_word = "concatenate"
+
+for letter in my_word:
+    Letters +=1
+    if letter in ["a", "e", "i", "o", "u", "y"]:
+        Vowels +=1
+print("your " + str(Letters) + " letter word contains " + str(Vowels) + " vowels")
