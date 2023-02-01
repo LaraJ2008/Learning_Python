@@ -49,3 +49,17 @@ for letter in my_word:
     if letter in ["a", "e", "i", "o", "u", "y"]:
         Vowels +=1
 print("your " + str(Letters) + " letter word contains " + str(Vowels) + " vowels")
+
+
+#1.5 Write a python program that prints out the multiplication table for the numbers 1 through 9.
+
+factor_1 = [*range(1,10,1)]
+factor_2 = [*range(1,10,1)]
+
+for first in factor_1:
+    for second in factor_2:
+       product = first * second 
+       print(str(first) + "*" +str(second) + " = " + str(product) )
+       
+
+
